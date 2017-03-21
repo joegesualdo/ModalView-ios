@@ -12,6 +12,7 @@
 		45382C441E80B90E00541061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45382C421E80B90E00541061 /* Main.storyboard */; };
 		45382C461E80B90E00541061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45382C451E80B90E00541061 /* Assets.xcassets */; };
 		45382C491E80B90E00541061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45382C471E80B90E00541061 /* LaunchScreen.storyboard */; };
+		45382C521E80B93200541061 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45382C511E80B93200541061 /* ModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		45382C451E80B90E00541061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45382C481E80B90E00541061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45382C4A1E80B90E00541061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45382C511E80B93200541061 /* ModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		45382C3D1E80B90E00541061 /* ModalView */ = {
 			isa = PBXGroup;
 			children = (
+				45382C501E80B92A00541061 /* Views */,
 				45382C3E1E80B90E00541061 /* AppDelegate.swift */,
 				45382C401E80B90E00541061 /* ViewController.swift */,
 				45382C421E80B90E00541061 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				45382C4A1E80B90E00541061 /* Info.plist */,
 			);
 			path = ModalView;
+			sourceTree = "<group>";
+		};
+		45382C501E80B92A00541061 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45382C511E80B93200541061 /* ModalView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45382C411E80B90E00541061 /* ViewController.swift in Sources */,
+				45382C521E80B93200541061 /* ModalView.swift in Sources */,
 				45382C3F1E80B90E00541061 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
