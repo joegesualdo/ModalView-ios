@@ -12,7 +12,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
   var Modal: ModalView?
   
   override func viewDidLoad() {
-    let button = UIButton(frame: CGRect(x:0, y: 200, width: 50, height: 30))
+    let button = UIButton(
+      frame: CGRect(x:0, y: 200, width: 50, height: 30)
+    )
     button.setTitle("Launch Modal", for: .normal)
     button.addTarget(self, action: #selector(launchModal), for: .touchUpInside)
 
@@ -46,7 +48,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
   }
   
   func launchModal() {
-    Modal = ModalView(insertView: modalView(), insertIntoView: view)
+    Modal = ModalView(insertView: modalView(), intoView: view)
     view.addSubview(Modal!)
   }
   

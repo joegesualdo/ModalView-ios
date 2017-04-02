@@ -13,7 +13,7 @@ class ModalView: UIView {
   var parentView: UIView
   var modalView: UIView
   
-  public init(insertView modalView: UIView, insertIntoView view: UIView) {
+  public init(insertView modalView: UIView, intoView view: UIView) {
     self.parentView = view
     self.modalView = modalView
     
