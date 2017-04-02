@@ -1,6 +1,8 @@
 # ModalView
 > An easy to implement iOS Modal
 
+![](https://github.com/joegesualdo/ModalView/raw/master/ModalView.gif)
+
 # Usage
 ```swift
 import UIKit
