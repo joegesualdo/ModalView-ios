@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ModalView: UIView {
+public class ModalView: UIView {
   var parentView: UIView
   var modalView: UIView
   
@@ -31,7 +31,7 @@ class ModalView: UIView {
     fadeIn(viewToFadeIn: self)
   }
   
-  func dismiss() {
+  public func dismiss() {
     fadeOut(viewToFadeOut: self)
     print("dismiss")
     let subViews = self.subviews
@@ -46,7 +46,7 @@ class ModalView: UIView {
   //   don't want to run setupLayout if we removed the view
   // http://stackoverflow.com/questions/8282288/is-willmovetosuperview-called-with-nil-when-removing-a-view-from-a-hierarchy
   // http://stackoverflow.com/questions/3074933/how-to-be-notified-when-a-uiview-detached-from-its-superview
-  override func didMoveToSuperview() {
+  override public func didMoveToSuperview() {
     super.didMoveToSuperview()
     if (self.window == nil) {
       // YOUR CODE FOR WHEN UIVIEW IS REMOVED
@@ -73,7 +73,7 @@ class ModalView: UIView {
     
   }
   
-  required init?(coder aDecoder: NSCoder) {
+  required public init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
   
